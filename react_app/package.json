@@ -1,0 +1,32 @@
+{
+  "name": "medheroes",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.9.3",
+    "moment-timezone": "^0.5.25",
+    "react": "^16.8.4",
+    "react-calendar": "^2.18.1",
+    "react-dom": "^16.8.4",
+    "react-router-dom": "^5.0.0",
+    "react-s-alert": "^1.4.1",
+    "react-scripts": "2.1.8",
+    "react-spinners": "^0.5.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:5000/",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

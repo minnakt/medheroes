@@ -1,0 +1,446 @@
+@font-face {
+  font-family: "Mikado-Bold";
+  src:url('fonts/Mikado-Bold.otf')
+}
+@font-face {
+  font-family: "Mikado-Regular";
+  src:url('fonts/Mikado-Regular.otf')
+}
+
+@font-face {
+  font-family: "Mikado-Black";
+  src:url('fonts/Mikado-Black.otf')
+}
+
+@font-face {
+  font-family: "Mikado-Medium";
+  src:url('fonts/MikadoMedium.otf')
+}
+
+html, body, #app, #app>div, #root {
+  height: 100%;
+}
+
+Dialog {
+  font-family: "Mikado-Regular" !important;
+}
+
+.loading-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.loading-text {
+  font-family: 'Mikado-Bold';
+  margin: 10px;
+  font-size: 30px;
+}
+
+
+input[type="submit"] {
+  -webkit-appearance: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:focus {
+  outline-color: #b5caff;
+}
+
+/*container contains top-bar, user, medication, rewards, calendar*/
+.containerHome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  background-color: #f9fbff;
+  padding-bottom: 20%;
+}
+
+
+/*USER*/
+.user {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.user #circle {
+  height: 100px;
+  width: 100px;
+  border: 0;
+  background-color: #dbe7ff;
+  border-radius: 50%;
+}
+
+.containerHome .user #circle {
+  height: 80px;
+  width: 80px;
+}
+
+.user #name {
+  font-family: "Mikado-Bold";
+  font-size: 18px;
+  text-decoration: none;
+  color: #5188ff;
+}
+
+.userLink {
+  text-decoration: none;
+}
+
+
+/*MEDICATION*/
+.med-container {
+  width: 85%;
+  margin-top: 9%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.deargod-med {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 0 0 0;
+  background-color: white;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px 0 #d6d6d6;
+
+}
+
+.deargod-top {
+  width: 100%;
+  height: 35px;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  align-items: center;
+}
+
+.deargod-top p {
+  font-family: "Mikado-Bold";
+  margin: 0;
+  padding: 8px 8px 8px 12px;
+  font-weight: bold;
+  color: #353638;
+  font-size: 16px;
+  width: 100%;
+}
+
+.med-container .deargod-med .deargod-top {
+  background-color:#ca7cff;
+}
+
+.med-container p {
+  color: #330060;
+}
+
+.one-medicine p {
+  color: #330060;
+}
+
+.pointer {
+  width: 4px;
+  height: 16px;
+  vertical-align: center;
+}
+
+.med-container .pointer {
+  background-color: #4a6ae0;
+}
+
+
+/*REWARDS*/
+.rewards-home-inner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.rewards-home-info {
+  margin-right: 7%;
+}
+
+.rewards-home-info span{
+  font-weight: bold;
+}
+
+.rewards-container {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6%;
+}
+
+.deargod-rewards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 10px;
+  margin: 0;
+  background-color: white;
+  font-size: 15px;
+  box-shadow: 0 0 6px lightgray;
+}
+
+.deargod-rewards p {
+  color: #703d00;
+}
+
+.rewards-container .pointer {
+  background-color: #FFCC33;
+}
+
+.containerHome .deargod-rewards img {
+  padding: 6%;
+}
+
+.rewards-popup {
+  color: #353638;
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+.rewards-popup-title {
+  font-family: "Mikado-Regular";
+  font-size: 18px;
+  color: #353638;
+  text-align: center;
+  font-weight: bold;
+}
+
+.rewards-popup-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rewards-popup .bold-this {
+  font-weight: bold;
+}
+
+.rewards-popup-img {
+  display: flex;
+}
+
+.rewards-popup-img img {
+  width: 100px;
+  height: 100px;
+}
+
+/*CALENDAR*/
+
+.calendar-container {
+  width: 85%;
+  margin-top: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar-container .deargod-top {
+  margin: 0px;
+  background-color: #ff5b5b;
+  box-shadow: 0 -3px  6px lightgray;
+  width: 100%;
+}
+
+.calendar-container .deargod-top p {
+  color: #540404;
+}
+
+.calendar-container .pointer {
+  background-color: #ff7c30;
+}
+
+.react-calendar {
+  width: 85% !important;
+  box-shadow: 0 3px 6px lightgray;
+  border: none !important;
+  border-radius: 0 0 8px 8px;
+  height: 40% !important;
+}
+
+/*the top of the calendar with the "April 2019", and arrows*/
+.react-calendar__navigation {
+  margin-bottom: 6px !important;
+}
+
+/*the buttons at the top (april.., arrows)*/
+.react-calendar__navigation__label button:focus {
+  background-color: #93acff !important;
+}
+
+/*in year view, when you click on a month*/
+.react-calendar__tile--hasActive {
+  background-color: #93acff !important;
+}
+
+/*when you lose focus after clicking on a top-bar tile*/
+.react-calendar__navigation button:enabled:hover, .react-calendar__navigation button:enabled:focus {
+  background-color: #93acff !important;
+}
+
+/*when you click on a number date in month view ("1","2", etc)*/
+.react-calendar__month-view__days button:enabled:focus {
+  background-color: #6ADC83 !important;
+}
+
+/*? not very sure when this happens...*/
+.react-calendar__tile--active {
+  background-color: #6ADC83 !important;
+}
+
+/*when you lose focus after clicking on a date tile*/
+.react-calendar__tile--active:enabled:hover, .react-calendar__tile--active:enabled:focus {
+  background-color: #6ADC83 !important;
+}
+
+.highlight-day {
+  background-color: #6ADC83 !important;
+}
+
+.highlight-box{
+  width: 80%;
+  text-align: center;
+}
+
+.react-calendar button:active {
+  background-color: #93acff !important;
+}
+
+.react-calendar__tile .react-calendar__year-view__months__month abbr {
+  font-weight: normal !important;
+  font-size: 14px !important;
+}
+
+/*the "April 2019" text*/
+.react-calendar__navigation__label {
+  font-size: 16px;
+}
+
+/* "SUN" MON etc*/
+.react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none !important;
+  font-size: 12px;
+}
+
+/**** MEDICINE DISPLAYED! *****/
+.med-displayed-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+.one-medicine {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content;
+  height: 45px;
+  float: left;
+}
+
+.medicine-title {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.one-medicine:last-child {
+  border-bottom: 0;
+}
+
+.circly {
+  height: 20px;
+  width: 20px;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+/*END*/
+
+
+#notif {
+  padding: 0px 20px;
+  text-align: center;
+}
+
+
+/*POPUPS*/
+.popup-button-wrapper {
+  background-color: whitesmoke;
+  box-shadow: 0 -2px 4px 1px #e5e5e5 !important;
+}
+
+/*FOOTER*/
+.footer {
+  z-index: 10;
+  width: 100%;
+  height: 7%;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 -2px 6px 1px #e5e5e5;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 11px;
+  margin: 0;
+  padding: 0;
+}
+
+.toHome {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.toProfile {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer img {
+  width: 18px;
+  height: 18px;
+}

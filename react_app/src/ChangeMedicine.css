@@ -1,0 +1,146 @@
+html, body, #app, #app>div, #root {
+  height: 100%
+}
+
+.hidden{
+  display: none;
+}
+
+.show {
+  color: #f47a61;
+  margin-left: 22px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 900px;
+}
+
+.display-form {
+  display: block;
+  text-align: center;
+  margin: 10px;
+}
+
+form {
+  display: inline-block;
+}
+
+#medicine-add{
+  font-size: 20px;
+  border: 1px solid #d1d1d1;
+  background: white;
+  border-radius: 8px;
+  padding: 5px 5px 5px 5px;
+  outline: none;
+  width: 80%;
+}
+
+#submitButton-home{
+  background-color: black;
+  border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px;
+    border: 0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-family: 'Karla';
+    font-size: 20px;
+    margin: 10px;
+}
+
+#notif {
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.deargod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.medicine-top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 5%;
+}
+
+.med-title-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  float: left;
+  margin-left: 8%;
+  width: 70%;
+}
+
+/*medicine-title*/
+.med-title-wrapper p {
+  font-size: 16px;
+  margin-left: 1%;
+}
+
+.med-bottom-wrapper {
+  width: 82%;
+  float: left;
+  margin: 3% 8% 6% 8%;
+  text-align: left;
+}
+
+/*.medicine-desc*/
+.med-bottom-wrapper p {
+  width: 100%;
+  text-align: left;
+  margin:0;
+  padding:0;
+  word-break: break-word;
+}
+
+.deargod-med .medicine-top-bar .icon-med {
+  max-width: 28px;
+  max-height: 14px;
+  padding-right: 3%;
+  margin: 0;
+  transform: rotate(-45deg);
+}
+
+
+.med-edit-wrapper {
+  width: 30%;
+}
+
+.icon-edit {
+  padding-right: 18%;
+  width: 24px;
+  height: 24px;
+}
+
+.icon-delete {
+  width: 24px;
+  height: 24px;
+}
+
+#circle {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+#small-circle {
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+}

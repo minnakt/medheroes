@@ -1,0 +1,183 @@
+@font-face {
+    font-family:'MikadoBold_DEMO';
+    src:url('fonts/MikadoBold_DEMO.otf');
+}
+
+@font-face {
+    font-family:'BurbankSmallBold';
+    src:url('fonts/BurbankSmall-Bold.otf');
+}
+
+@font-face {
+    font-family:'Mikado-Regular';
+    src:url('fonts/Mikado-Regular.otf');
+}
+
+* {
+    font-family: "Mikado-Regular";
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container{
+    background-color: #f9fbff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  background-image: url("images/wallpaper/wallpaper_60.png");
+  background-size:cover;
+}
+
+
+.s-alert-wrapper{
+  width: 100%
+}
+.s-alert-bottom, .s-alert-top{
+  width: 70% !important;
+  position: absolute !important;
+  left: 15% !important;
+}
+
+.s-alert-box-inner {
+  text-align: center !important;
+}
+
+/*TOP (logo and welcome text)*/
+.super {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.welcome-text {
+    font-family: "MikadoBold_DEMO";
+    margin-top: -12px;
+    font-size: 45px;
+    color: #5697ff;
+}
+
+/*LOGIN FORM*/
+.loginForm {
+    margin-top: 10%;
+}
+
+
+.password p, .username p {
+    font-family: 'MikadoBold_DEMO';
+    font-size: 20px;
+    margin: 0 0 0 3px;
+    color: #353638;
+    align-self: flex-start;
+
+}
+
+#pass-input, #acct-input{
+    border: 0;
+    background-color: #dbe7ff;
+    border-radius: 8px;
+    padding: 0px 10px 0px 10px;
+    outline: none;
+    height: 40px;
+    width: 160px;
+    font-size: 16px;
+    color: #353638;
+}
+
+#pass-input:focus, #acct-input:focus {
+    outline: 0;
+    background-color: #acc6f9;
+}
+
+.username, .password, .login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 22px;
+}
+
+.login input {
+    font-family: MikadoBold_DEMO;
+    border: 0 none;
+    cursor:pointer;
+    background-color: #6ADC83;
+    color: #1c3f22;
+    border-radius: 16px;
+    font-size: 22px;
+    margin-top:24px;
+    height: 45px;
+    width: 130px;
+}
+
+.login input:focus {
+    outline: 0;
+    box-shadow: 0 0 6px 4px #b5caff;
+}
+
+/*SIGNUP*/
+.signup-wrapper {
+    margin-top: 11%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 14px;
+    width: 60%;
+}
+
+.signup p {
+    color: #353638;
+    font-size: 16px;
+    margin: 0;
+}
+
+.signup-here {
+    font-family: "BurbankSmallBold";
+    box-shadow: inset 0 -4px 0 #6ADC83;
+}
+
+.signup-here:focus {
+    outline: 0;
+    box-shadow: inset 0 -4px 0 #6ADC83, 0 0 6px 4px #b5caff;
+}
+
+#make-acct{
+    font-family: "Mikado-Regular";
+}
+
+#acct-input, #pass-input{
+    font-family: "Mikado-Regular";
+}
+
+#signup {
+    font-size: 15px;
+    margin: 10px;
+    color: blue;
+}

@@ -1,0 +1,177 @@
+html, body, #app, #app>div, #root {
+  height: 100%
+}
+
+/*containerProfile*/
+.containerProfile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+  background-color: #f9fbff;
+  padding-bottom: 25%;
+  min-height: 100%;
+  width: 100%;
+}
+
+/*USER*/
+.containerProfile .user {
+  /*inherit from App.css*/
+  margin-top: 5%;
+}
+
+.avatarWrapper {
+  height: 150px;
+  width: 150px;
+}
+
+.user #circle {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+}
+
+.user #circle span {
+  margin: 12%;
+  font-size: 13px;
+  color: #2146d1;
+}
+
+.containerProfile .user #name {
+  box-shadow: none;
+  font-size: 22px;
+  margin-top: 10%;
+}
+
+
+/*MEDICATION*/
+.containerProfile .med-container {
+  margin-top: 6%;
+}
+
+/*"add medications" button*/
+.deargod-med button {
+  background-color: #7edd97;
+  border: 0;
+  margin: 10px 0 10px 0;
+  border-radius: 16px;
+}
+
+.deargod-med button span {
+  font-weight: bold;
+  color: #1c3f22;
+}
+
+.single-medicine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+
+/*REWARDS*/
+
+.containerProfile .rewards-home-inner img {
+  padding: 6%;
+}
+
+.deargod-rewards button {
+  border: none;
+  border-radius: 16px;
+  background-color: #7edd97;
+  margin-bottom: 11px;
+  font-weight: bold;
+  color: #1c3f22;
+}
+
+.rewards-home-inner span {
+  font-weight: bold;
+}
+
+.rewards-home-inner {
+  padding: 2%;
+}
+
+/*override for rewards top*/
+.deargod-rewards .deargod-top {
+  background-color: #fcc84e;
+}
+
+.reward {
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Karla';
+  font-size: 20px;
+  width: 80%;
+}
+
+.inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+}
+
+.name-progress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.name-progress p {
+  margin: 4px;
+  font-size: 20px;
+}
+
+.progress {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+
+}
+.progress-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid black;
+  font-size: 20px;
+}
+
+/*LOGOUT*/
+.logout {
+  margin-top: 5%;
+}
+
+.logout input {
+  font-family: 'MikadoBold_DEMO';
+  border: 0 none;
+  cursor:pointer;
+  background-color: #ff6868;
+  color: #3f1c1c;
+  border-radius: 16px;
+  font-size: 22px;
+  margin-top:10px;
+  height: 45px;
+  width: 130px;
+}
+
+.logout input:focus {
+  outline: 0;
+  box-shadow: 0 0 6px 4px #b5caff;
+}

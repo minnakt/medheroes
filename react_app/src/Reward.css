@@ -1,0 +1,371 @@
+@font-face {
+    font-family:'BurbankSmall';
+    src:url('fonts/BurbankSmall-Medium.otf');
+}
+
+html, body, #app, #app>div, #root {
+  height: 100%
+}
+
+.menu {
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  color: black;
+  margin: 8px 5px;
+}
+
+.reward-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  overflow: scroll;
+  background-image: url("images/wallpaper/rewards6072.png");
+  background-color: #fffbea;
+}
+
+.reward-card {
+  margin: 40px 12% 10px 12%;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0px 0 8px 0;
+  /* box-shadow: 2px 2px 6px 0 #d6d6d6; */
+  width: 90%;
+}
+
+#circle {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+#small-circle {
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 80%;
+    margin: 10px;
+}
+
+td {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+td p {
+  margin: 0px;
+}
+
+tr {
+  height: 80px;
+}
+
+tr:first-of-type td:first-of-type {
+  border-top-left-radius: 10px;
+}
+tr:first-of-type td:last-of-type {
+  border-top-right-radius: 10px;
+}
+tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 10px;
+}
+tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 10px;
+}
+
+.reward {
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Karla';
+  font-size: 20px;
+  width: 80%;
+}
+
+.inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+}
+
+#days-of-week {
+  font-family: 'Karla';
+  font-size: 20px;
+}
+
+.day-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#header {
+  height: 70px;
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-box p{
+  font-family: 'Karla';
+  font-size: 18px;
+}
+
+.medicine-info p {
+  font-family: 'Karla';
+  font-size: 13px;
+}
+
+.row-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+form {
+  display: inline-block;
+}
+
+.goal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 30px;
+  padding-top: 3px;
+}
+
+.time-to-set {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  text-align: center;
+  color: black;
+}
+
+.time-to-set p {
+  margin: 0;
+}
+
+.inner-goal {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  width: 80%;
+  margin-top: 12px;
+}
+
+#reward-desc-input{
+    border: 0;
+    background-color: white;
+    border-radius: 8px;
+    padding: 0px 10px 0px 10px;
+    outline: none;
+    height: 40px;
+    width: 80%;
+    font-size: 16px;
+    color: #353638;
+    box-shadow: 2px 2px 6px 0 #d6d6d6;
+}
+
+#reward-desc-input:focus {
+    outline: 0;
+    background-color: #ffc338;
+}
+
+.goal .reward-desc p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.reward-desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 30px;
+  font-size: 16px;
+  width: 90%;
+  margin-bottom: 15px;
+}
+
+.inner-goal .reward-days p {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.reward-days{
+  margin-top: 15px;
+  margin-bottom: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 16px;
+  width: 90%;
+}
+
+.select-reward {
+  width: 10%;
+  margin-left: 0px;
+
+}
+
+select {
+  box-shadow: 2px 2px 6px 0 #d6d6d6;
+  border: 0;
+  padding: 10px;
+  padding-left: 15px;
+  background-color: white;
+  margin-left: 0px;
+  margin-top: 0px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+select:focus {
+  outline: 0;
+  background-color: #ffc338;
+}
+
+.inner-goal p {
+  /* text-align: center; */
+}
+
+.goal p {
+  font-family: 'BurbankSmall';
+  font-size: 16px;
+  margin: 0px;
+}
+
+#bar {
+  margin-top: 10px;
+  width: 80%;
+  height: 4px;
+  background-color: #ffc414;
+}
+
+.reward-choose {
+  display: flex;
+  justify-content: flex-start;
+  width: 70%;
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+.reward-choose p{
+  margin: 0px;
+  font-size: 18px;
+  border-bottom: 4px solid #ffc414;
+}
+
+.ok-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+#OK {
+  font-family: 'Mikado-Bold';
+  font-size: 20px;
+  margin: 20px;
+  color: #353638;
+  padding: 10px;
+  width: 100px;
+  background-color: #ffc414;
+  border:1px solid #ffc414;
+  border-radius: 40px 40px 0px 40px;
+}
+
+#OK:focus {outline:0;}
+
+.footer-reward {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.reward-library {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  max-height: 1700px;
+  margin: 20px;
+  margin-bottom: 100px;
+}
+
+.reward-selection-title{
+  font-family: "Mikado-Bold";
+  font-size: 40px;
+  color: #ffb916;
+  text-align: center;
+}
+
+.reward-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px 0 #d6d6d6;
+  -webkit-box-shadow: 2px 2px 6px 0 #d6d6d6;
+  -moz-box-shadow: 2px 2px 6px 0 #d6d6d6;
+  background-color: white;
+  margin: 4px;
+  transition: all 0.2s ease-out;
+  transform: scale(1);
+}
+
+.reward-box:focus {
+  outline: none;
+  background-color: #ffd36b;
+}
+
+#reward-desc{
+  margin-top: 10px;
+  font-size: 25px;
+  border: 1px solid #d1d1d1;
+  background: white;
+  border-radius: 8px;
+  padding: 5px 5px 5px 5px;
+  outline: none;
+  width: 90%;
+}
