@@ -1,4 +1,5 @@
-# medheroes
+# MedHeroes
+This is an adapted version of a private repo.
 
 ## Acknowledgements ##
 I was in charge of coding the front-end, the back-end, editing rewards, and designing and drawing avatars. <br></br>
