@@ -5,6 +5,11 @@ This is an adapted version of a private repo.
 MedHeroes is an application to encourage children with long-term medical conditions to take their prescribed medicine. The target audience is children from ages of around 4 to 10. <br> </br>
 The premise of the application is that children will use the application with their parents as children should not be expected to take their medication on their own.
 
+## Technologies ##
+- Front-end in React.
+- Back-end in NodeJS.
+- Database is MongoDB.
+
 ## Functionality ##
 - Users can make register for an account and sign up.
 - Sign up will prevent empty fields, invalid email addresses, incorrect password confirmation, and usernames overlapping with other users.
