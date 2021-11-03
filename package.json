@@ -29,7 +29,7 @@
     "mongoose": "^5.5.0",
     "nodemon": "^1.18.10",
     "session": "^0.1.0",
-    "validator": "^10.11.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {}
 }
