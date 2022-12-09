@@ -19,10 +19,10 @@
   "homepage": "https://github.com/minnakt/webapps2019#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.20.1",
     "connect-mongo": "^2.0.3",
     "cors": "^2.8.5",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "express-session": "^1.15.6",
     "moment-timezone": "^0.5.25",
     "mongo-sanitize": "^1.0.1",
